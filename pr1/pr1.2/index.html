@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор мазуту</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Калькулятор розрахунку складу мазуту</h1>
+
+<form id="fuelForm">
+    <label>Вуглець C (%): <input type="number" id="carbon" value="62.4"></label>
+    <label>Водень H (%): <input type="number" id="hydrogen" value="3.8"></label>
+    <label>Кисень O (%): <input type="number" id="oxygen" value="4.3"></label>
+    <label>Сірка S (%): <input type="number" id="sulfur" value="3.6"></label>
+    <label>Нижча теплота згоряння горючої маси (МДж/кг): <input type="number" id="q_dafi" value="40.40"></label>
+    <label>Вологість робочої маси W (%): <input type="number" id="moisture" value="6.0"></label>
+    <label>Зольність сухої маси A (%): <input type="number" id="ash" value="18.8"></label>
+    <label>Вміст ванадію V (мг/кг): <input type="number" id="vanadium" value="333.3"></label>
+
+    <button type="button" onclick="calculateMazut()">Розрахувати</button>
+</form>
+
+<h2>Результати:</h2>
+<div id="results"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

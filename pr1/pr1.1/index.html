@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор палива</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>Калькулятор складу палива</h2>
+  <div class="input-group">
+    <label for="hydrogen">Водень (H), %:</label>
+    <input type="number" id="hydrogen" value="3.8">
+  </div>
+  <div class="input-group">
+    <label for="carbon">Вуглець (C), %:</label>
+    <input type="number" id="carbon" value="62.4">
+  </div>
+  <div class="input-group">
+    <label for="sulfur">Сірка (S), %:</label>
+    <input type="number" id="sulfur" value="3.6">
+  </div>
+  <div class="input-group">
+    <label for="nitrogen">Азот (N), %:</label>
+    <input type="number" id="nitrogen" value="1.1">
+  </div>
+  <div class="input-group">
+    <label for="oxygen">Кисень (O), %:</label>
+    <input type="number" id="oxygen" value="4.3">
+  </div>
+  <div class="input-group">
+    <label for="moisture">Волога (W), %:</label>
+    <input type="number" id="moisture" value="6.0">
+  </div>
+  <div class="input-group">
+    <label for="ash">Зола (A), %:</label>
+    <input type="number" id="ash" value="18.8">
+  </div>
+  <button onclick="calculateFuel()">Розрахувати</button>
+  <div class="results" id="results"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
